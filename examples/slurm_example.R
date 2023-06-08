@@ -1,6 +1,7 @@
 # example of using rslurm to parallelise.
 
-
+library(tidyverse)
+library(survextrap)
 library(rslurm)
 
 # specify jobname and path where results are to be stored.
@@ -11,7 +12,6 @@ path_to_results <- "test_results"
 
 # import trial data and call scripts to create functions.
  
-library(survextrap)
 control <- cetux[cetux$treat=="Control",]
 
 source("functions/sim_all.R")
