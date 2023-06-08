@@ -22,9 +22,9 @@ Description of examples
 ***********************************
 ``` example1.R ``` demonstrates use of each function
 
-``` example2.R ``` demonstrates use ``` sim_all ``` for a specified scenario
+``` example2.R ``` demonstrates use of ``` sim_all ``` for a specified scenario
 
-``` slurm_example1.R ``` demonstrates use slurm_apply to parallelise across multiple scenarios with cluster
+``` slurm_example1.R ``` demonstrates use of slurm_apply to parallelise across multiple scenarios with cluster
 
 ***********************************
 Results folder
