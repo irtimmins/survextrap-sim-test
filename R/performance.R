@@ -16,5 +16,10 @@
 ##
 ##
 
+#' @param fit_model
+#' @param measure, select measure such as bias, mse, average LOO-IC...
+
+# ouput list of performance measures
+# list(bias = , mse = , ...)
 
 
