@@ -20,13 +20,13 @@ True model is of class '"flexsurvreg"'.
 ***********************************
 Description of examples
 ***********************************
-``` example1 ``` demonstrates use of each function
+``` example1.R ``` demonstrates use of each function
 
-``` example2 ``` demonstrates use sim_all for a specified scenario
+``` example2.R ``` demonstrates use sim_all for a specified scenario
 
-``` slurm_example1 ``` demonstrates use slurm_apply to parallelise across multiple scenarios with cluster
+``` slurm_example1.R ``` demonstrates use slurm_apply to parallelise across multiple scenarios with cluster
 
 ***********************************
 Results folder
 ***********************************
-``` slurm_example1 ``` demonstrates use slurm_apply to parallelise across multiple scenarios with cluster
+``` rmst_bias.pdf ``` ggplot2 displaying results from slurm_example1
