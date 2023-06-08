@@ -7,9 +7,7 @@
 simulate_dgm <- function(true_mod, N, seed){
   
   # Create a new simulated baseline characteristics dataset of size N
-  # This will be the same base dataset used in all simulated datasets.
-  #
-  # Another option would be to simulate a different censoring distribution for each simulated dataset
+
   x <- data.frame(id=1:N)
   
   # Censoring times (if no events)
