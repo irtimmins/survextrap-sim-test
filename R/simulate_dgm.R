@@ -1,4 +1,13 @@
-# Simulate from the "true" survival model
+## Simulate from the "true" survival model
+
+## TODO
+## Could add commands for saving simulated datasets for reproducibility
+##
+## May want to be able to simulate multiple datasets,
+## Though how efficient is this, could we ensure this was parallelisable?
+## rather than looping
+
+
 #'
 #' @param true_mod true model and censoring distribution, returned from dgm
 #' @param N Number of patients in trial
