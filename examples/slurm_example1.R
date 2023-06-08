@@ -19,14 +19,13 @@ source("functions/fit_model.R")
 source("functions/estimands.R")
 source("functions/visualise.R")
 
-setwd(path_to_results)
-
+setwd("examples_results")
 
 # set of parameters for simulation scenarios.
 
 pars <- expand_grid(k_true = 3,
                     k_true_cens = 4,
-                    N = c(seq(from = 200, to = 2000, length.out = 20),
+                    N = c(seq(from = 200, to = 2000, length.out = 10),
                           seq(from = 2000, to = 10000, length.out = 10)), # vary sample size
                     p_normal_sd = 20,
                     p_gamma_shape = 2,
@@ -40,7 +39,7 @@ pars <- expand_grid(k_true = 3,
 # submit slurm job, specifying nodes, cpus, memory
 
 sjob <- slurm_apply(sim_all, pars, jobname = jobname,
-                    nodes = 20, cpus_per_node = 4, submit = TRUE,
+                    nodes = 20, cpus_per_node = 4, submit = FALSE,
                     global_objects = c("control", "dgm", "simulate_dgm", "fit_model", "estimands"),
                     pkgs = c("dplyr", "tidyr", "ggplot2", "readr",
                              "flexsurv", "survextrap"),
