@@ -1,8 +1,8 @@
 # survextrap-sim-test
 Test simulation study for survextrap
-
+***********************************
 Overview of functions
-
+***********************************
 ``` specify_dgm ``` specifies a "true" survival function based on real survival data.
 True model is of class '"flexsurvreg"'.
 
@@ -17,7 +17,11 @@ True model is of class '"flexsurvreg"'.
 ``` sim_all ``` wraps all functions together
 
 
+***********************************
 Description of examples
+***********************************
+``` example1 ``` demonstrates use of each function
 
+``` example2 ``` demonstrates use sim_all for a specified scenario
 
-
+``` slurm_example1 ``` demonstrates use slurm_apply to parallelise across multiple scenarios with cluster
