@@ -25,3 +25,8 @@ Description of examples
 ``` example2 ``` demonstrates use sim_all for a specified scenario
 
 ``` slurm_example1 ``` demonstrates use slurm_apply to parallelise across multiple scenarios with cluster
+
+***********************************
+Results folder
+***********************************
+``` slurm_example1 ``` demonstrates use slurm_apply to parallelise across multiple scenarios with cluster
