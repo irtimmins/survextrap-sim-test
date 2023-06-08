@@ -1,10 +1,14 @@
 # sim_all wrap all functions into pipeline
 # 
-# bias in rmst is sing output
+# bias in rmst is single output
 # 
 # could be generalised to provide output on other
 # performance measures and estimands,
 # such as area between hazard or survival curves.
+#
+# could also add further parameters to specify
+# M-spline model, such as the location of final knot(s)
+# 
 #
 #'
 #' @param data Dataset to use for simulation, with years/d as time/event columns

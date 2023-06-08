@@ -32,4 +32,3 @@ res <- sim_all(data = control,
     maxT = 5.5,
     seed = 161)
 
-

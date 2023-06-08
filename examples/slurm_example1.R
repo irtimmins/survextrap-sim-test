@@ -6,9 +6,7 @@ library(rslurm)
 
 # specify jobname and path where results are to be stored.
 
-jobname <- "sim_test1"
-path_to_results <- "test_results"
-
+jobname <- "test1"
 
 # import trial data and call scripts to create functions.
  
