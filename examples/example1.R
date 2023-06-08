@@ -6,11 +6,11 @@ library(flexsurv)
 
 rm(list=ls())
 
-source("functions/specify_dgm.R")
-source("functions/simulate_dgm.R")
-source("functions/fit_model.R")
-source("functions/estimands.R")
-source("functions/visualise.R")
+source("R/specify_dgm.R")
+source("R/simulate_dgm.R")
+source("R/fit_model.R")
+source("R/estimands.R")
+source("R/visualise.R")
 
 # import trial data from cetux control arm
 
@@ -48,3 +48,4 @@ est_mod <- estimands(true_mod = true_mod,
 # visualise true and fitted hazard curves
 
 vis_mod(true_mod = true_mod, fit_mod = fit_mod, maxT = maxT_control )
+

@@ -12,12 +12,12 @@ jobname <- "test1"
  
 control <- cetux[cetux$treat=="Control",]
 
-source("functions/sim_all.R")
-source("functions/specify_dgm.R")
-source("functions/simulate_dgm.R")
-source("functions/fit_model.R")
-source("functions/estimands.R")
-source("functions/visualise.R")
+source("R/sim_all.R")
+source("R/specify_dgm.R")
+source("R/simulate_dgm.R")
+source("R/fit_model.R")
+source("R/estimands.R")
+source("R/visualise.R")
 
 setwd("examples_results")
 
@@ -37,6 +37,8 @@ pars <- expand_grid(k_true = 3,
                     seed = 1:5 ) # replicate scenario over distinct seeds 
 
 # submit slurm job, specifying nodes, cpus, memory
+# change to submit = TRUE to submit to cluster
+# slurm_apply generates bash scripts in /_rslurm_... directory
 
 sjob <- slurm_apply(sim_all, pars, jobname = jobname,
                     nodes = 20, cpus_per_node = 4, submit = FALSE,

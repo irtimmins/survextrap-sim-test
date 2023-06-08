@@ -7,12 +7,12 @@ library(flexsurv)
 rm(list=ls())
 
 
-source("functions/specify_dgm.R")
-source("functions/simulate_dgm.R")
-source("functions/fit_model.R")
-source("functions/estimands.R")
-source("functions/visualise.R")
-source("functions/sim_all.R")
+source("R/specify_dgm.R")
+source("R/simulate_dgm.R")
+source("R/fit_model.R")
+source("R/estimands.R")
+source("R/visualise.R")
+source("R/sim_all.R")
 
 control <- cetux[cetux$treat=="Control",]
 
