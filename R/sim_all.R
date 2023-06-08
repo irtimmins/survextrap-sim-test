@@ -1,16 +1,19 @@
-# sim_all wrap all functions into pipeline
-# 
-# bias in rmst is single output
-# 
-# could be generalised to provide output on other
-# performance measures and estimands,
-# such as area between hazard or survival curves.
-#
-# could also add further parameters to specify
-# M-spline model, such as the location of final knot(s)
-# 
-#
-#'
+## sim_all wrap all functions into pipeline
+
+## TODO
+## currently estimates bias in rmst as single output
+
+## needs to be generalised to provide output on other
+## performance measures and estimands,
+## such as area between hazard or survival curves,
+## as well as model fit measures like LOO-IC.
+
+## also needs more further parameters to specify
+## M-spline model, such as the location of final knot(s)
+## 
+
+
+
 #' @param data Dataset to use for simulation, with years/d as time/event columns
 #' @param k_true Number of knots used in true FPM model fitted to the data
 #' @param k_true_cens Number of knots used in true FPM censoring model fitted to the data
