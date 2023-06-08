@@ -1,4 +1,15 @@
 # Fit survextrap model
+
+## TODO:
+## Currently fits "opt" stan_fit for efficiency
+##
+## Need to add options for MCMC and Variational Bayes. 
+## Including chains, iterations, ...
+## 
+##  
+##
+
+
 #'
 #' @param sim_data
 #' @param prior_hscale 

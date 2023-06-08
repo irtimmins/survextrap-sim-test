@@ -1,4 +1,11 @@
-# Fit survextrap model
+## evaluate estimands survextrap model
+
+## TODO 
+## need to add assess model fit using  LOO-IC
+##
+
+
+
 #'
 #' @param dgm, true model, returned from dgm function
 #' @param fit_mod fitted model, returned from fit_model function
