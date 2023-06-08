@@ -20,7 +20,7 @@ source("functions/sim_all.R")
 res <- sim_all(data = control,
     k_true = 3,
     k_true_cens = 4,
-    N = 10000,
+    N = 500,
     p_normal_sd = 20,
     p_gamma_shape = 2,
     p_gamma_rate = 1,
