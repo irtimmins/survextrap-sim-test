@@ -3,7 +3,7 @@ Test simulation study for survextrap
 ***********************************
 Overview of functions
 ***********************************
-``` specify_dgm ``` specifies a "true" survival function based on real survival data.
+``` specify_dgm ``` specifies a "true" survival function by fitting FPM model using real survival data.
 True model is of class '"flexsurvreg"'.
 
 ``` simulate_dgm ``` simulates from the "true" survival model
