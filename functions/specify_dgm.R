@@ -1,4 +1,10 @@
 # Specify a "true" survival function based on real survival data
+#
+# Currently fits Royston-Parmar FPM to real data.
+# Could consider a mixture of Weibulls as an alternative.
+#
+#
+#
 #'
 #' @param data Real dataset with years/d as time/event columns
 #' @param k_true Number of knots used in true FPM model fitted to the data
