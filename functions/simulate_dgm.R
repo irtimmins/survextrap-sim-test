@@ -1,4 +1,4 @@
-# Specify a "true" survival function based on real survival data
+# Simulate from the "true" survival model
 #'
 #' @param true_mod true model and censoring distribution, returned from dgm
 #' @param N Number of patients in trial
