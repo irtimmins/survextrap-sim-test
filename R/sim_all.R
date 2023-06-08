@@ -13,7 +13,6 @@
 ## 
 
 
-
 #' @param data Dataset to use for simulation, with years/d as time/event columns
 #' @param k_true Number of knots used in true FPM model fitted to the data
 #' @param k_true_cens Number of knots used in true FPM censoring model fitted to the data

@@ -6,8 +6,13 @@
 ## Need to add options for MCMC and Variational Bayes. 
 ## Including chains, iterations, ...
 ## 
-##  
-##
+## It would useful to control other aspects of the
+## HMC sampler, such as step_size, adapt_delta, max_treedepth 
+## these should help avoid divergent transitions for more
+## complex models
+## Can we implement these in survextrap?
+## 
+
 
 
 #'
