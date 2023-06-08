@@ -26,7 +26,7 @@ true_mod <- dgm(data = control, k_true = 3, k_true_cens = 4, maxT = maxT_control
 
 # simulate trial data from "true" model, with 1000 persons.
 
-sim_data <- simulate_dgm(true_mod = true_mod, N = 1000, seed = 161)
+sim_data <- simulate_dgm(true_mod = true_mod, N = 400, seed = 1)
 
 # fit survextrap model to new simulated trial data, specifiying survextrap parameters
 
@@ -35,8 +35,9 @@ fit_mod <- fit_model(sim_data = sim_data,
                      prior_hsd = p_gamma(2,1),
                      mspline_fit = list(degree = 3,
                                         bsmooth = TRUE,
-                                        df = 10),
-                     maxT = maxT_control)
+                                        df = 7),
+                     maxT = maxT_control,
+                     seed = 1)
 
 # compute estimands (area between hazard curves, rmst)
 
