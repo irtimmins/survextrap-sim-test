@@ -29,4 +29,4 @@ Description of examples
 ***********************************
 Results folder
 ***********************************
-``` rmst_bias.pdf ``` ggplot2 displaying results from slurm_example1
+``` rmst_bias.pdf ``` ggplot2 displaying results from ``` slurm_example1.R ```
