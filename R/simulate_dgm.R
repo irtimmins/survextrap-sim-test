@@ -1,11 +1,20 @@
 ## Simulate from the "true" survival model
 
 ## TODO
-## Could add commands for saving simulated datasets for reproducibility
 ##
-## May want to be able to simulate multiple datasets,
+##
+## Need to generalise to simulate multiple datasets,
 ## Though how efficient is this, could we ensure this was parallelisable?
-## rather than looping
+## rather than looping?
+##
+## Could add commands for saving any simulated datasets
+## for reproducibility
+##
+## Can frailty term be added to make more realistic?
+##
+## Could add treatment and covariate effects,
+## under different PH/non-PH/waning assumptions,
+## to explore robustness
 
 
 #'
