@@ -37,7 +37,7 @@ pars <- expand_grid(k_true = 3,
                     mspline_bsmooth = TRUE,
                     mspline_df = c(5:13), # vary number of knots
                     maxT = 5.5,
-                    seed = 1:5 ) # replicate for distinct seeds. 
+                    seed = 1:5 ) # replicate scenario over distinct seeds 
 
 # submit slurm job, specifying nodes, cpus, memory
 
@@ -65,7 +65,7 @@ summary(as.factor(res$seed))
 summary(as.factor(res$mspline_df))
 summary(as.factor(res$N))
 
-# evaluate mean bias2 of rmst.
+# evaluate mean bias2 of rmst, averaged across replications (seeds)
 
 figure <- res %>%
   group_by(k_true,
