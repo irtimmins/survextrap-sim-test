@@ -37,12 +37,12 @@ pars <- expand_grid(k_true = 3,
                     mspline_bsmooth = TRUE,
                     mspline_df = c(5:13), # vary number of knots
                     maxT = 5.5,
-                    seed = 1:50 ) # replicate for distinct seeds. 
+                    seed = 1:5 ) # replicate for distinct seeds. 
 
 # submit slurm job, specifying nodes, memory
 
 sjob <- slurm_apply(sim_all, pars, jobname = jobname,
-                    nodes = 100, cpus_per_node = 4, submit = TRUE,
+                    nodes = 20, cpus_per_node = 4, submit = TRUE,
                     global_objects = c("control", "dgm", "simulate_dgm", "fit_model", "estimands"),
                     pkgs = c("dplyr", "tidyr", "ggplot2", "readr",
                              "flexsurv", "survextrap"),
