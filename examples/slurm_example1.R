@@ -90,8 +90,3 @@ ggplot(data=figure, aes(x=N, y = mean_bias2, colour = mspline_df))+
   xlab("N")+
   ylab("RMST bias2")+
   labs(colour= "M-spline df")
-  
-
-
-
-
