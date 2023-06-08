@@ -14,8 +14,10 @@ source("functions/estimands.R")
 source("functions/visualise.R")
 source("functions/sim_all.R")
 
+control <- cetux[cetux$treat=="Control",]
 
 
+# sim_all computes bias in rmst
 
 res <- sim_all(data = control,
     k_true = 3,
@@ -30,6 +32,4 @@ res <- sim_all(data = control,
     maxT = 5.5,
     seed = 161)
 
-#vis_mod(true_mod = res$true_mod, fit_mod = res$fit_mod)
 
-#res$est_mod

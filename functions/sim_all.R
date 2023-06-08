@@ -1,4 +1,11 @@
-# wrap functions into pipeline
+# sim_all wrap all functions into pipeline
+# 
+# bias in rmst is sing output
+# 
+# could be generalised to provide output on other
+# performance measures and estimands,
+# such as area between hazard or survival curves.
+#
 #'
 #' @param data Dataset to use for simulation, with years/d as time/event columns
 #' @param k_true Number of knots used in true FPM model fitted to the data
