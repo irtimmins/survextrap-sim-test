@@ -39,7 +39,7 @@ pars <- expand_grid(k_true = 3,
                     maxT = 5.5,
                     seed = 1:5 ) # replicate for distinct seeds. 
 
-# submit slurm job, specifying nodes, memory
+# submit slurm job, specifying nodes, cpus, memory
 
 sjob <- slurm_apply(sim_all, pars, jobname = jobname,
                     nodes = 20, cpus_per_node = 4, submit = TRUE,
