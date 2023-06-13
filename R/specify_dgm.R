@@ -1,20 +1,5 @@
 ## Specify a "true" survival function based on real survival data
 
-## TODO
-##
-## Currently fits Royston-Parmar FPM to real data.
-## Should also enable fit to be a mixture of Weibulls as an alternative.
-## And possibly also standard parametric models
-##
-## May also want to consider simulating from a M-spline model,
-## this would enable tests of internal validity.
-## Is there a frequentist implementation for
-## fitting M-splines hazard models? 
-##
-##
-##
-
-
 #'
 #' @param data Real dataset with years/d as time/event columns
 #' @param k_true Number of knots used in true FPM model fitted to the data

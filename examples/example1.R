@@ -1,6 +1,7 @@
 # example workflow of demonstrating each function.
 
 library(tidyverse)
+library(ggplot2)
 library(survextrap)
 library(flexsurv)
 
